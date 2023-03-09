@@ -5,9 +5,9 @@
 
 .Counter-box{
     margin-block-start: 100px;
-    max-width: 400px;
+    max-width: 600px;
     margin-inline: auto;
-    padding: 200px;
+    padding: 100px;
     background-color: #219ebc;
     border-radius: 20px;
     display: flex;
@@ -28,11 +28,15 @@
 
 .btn-group{
     display: flex;
-    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
-.Btn-plus{
+.Btn{
     background-color: #ffb703;
+    text-transform: uppercase;
+    flex: 1;
     color: white;
     padding: 10px 25px;
     border-radius: 10px;
@@ -43,20 +47,8 @@
     transition: transform ease .5s, box-shadow ease .5s;
 }
 
-.Btn-minus{
-    background-color: #ffb703;
-    color: white;
-    padding: 10px 25px;
-    border-radius: 10px;
-    font-size: 20px;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    transition: transform ease .5s, box-shadow ease .5s;
-}
 
-.Btn-minus:hover,
-.Btn-plus:hover {
+.Btn:hover {
     transform: translateY(-5px);
     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   }
